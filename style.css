@@ -6,7 +6,7 @@
 /* Track */
 ::-webkit-scrollbar-track {
   border-radius: 10px;
-  background-color: transparent;
+  background-color: linear-gradient(#1A1A27, #06060e);
 }
 
 
@@ -71,13 +71,14 @@ html {
 }
 
 body {
-  background-color: #1A1A27;
+
 font-family: "Lucida Console";
   color: #9e97cc;
 margin: auto;
 width: 50%;
 font-size: 20px;
 line-height: 1.8;
+background-image: linear-gradient(#1A1A27, #06060e);
 }
 
 h1 {
@@ -105,6 +106,7 @@ padding:0%;
 width: 15%;
 height: 30%;
 text-align: left;
+letter-spacing: 2px;
 }
 
 .divider {
@@ -160,6 +162,7 @@ img {
   color: #9e97cc;
   background-color: rgba(36, 36, 46,0.4); /* Black w/ opacity */
   
+  
 }
 
 /* Modal Content */
@@ -170,11 +173,12 @@ img {
   margin: auto;
   padding: 0;
   width: 80%;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.4s;
   animation-name: animatetop;
-  animation-duration: 0.4s
+  animation-duration: 0.4s;
+  border: 2px solid #9e97cc;
+  border-radius: 15px;
 }
 
 /* Add Animation */
@@ -190,27 +194,30 @@ img {
 
 /* The Close Button */
 .close {
-  border: 2px solid #9e97cc;
   float: right;
   font-size: 28px;
   font-weight: bold;
+  transition: 0.5s;
 }
 
 .close:hover,
 .close:focus {
-  color: #000;
+  color: #ffffff;
   text-decoration: none;
   cursor: pointer;
+  transition: 0.5s;
 }
 
 .modal-header {
   padding: 2px 16px;
   background-color: #24242e;
   color: #9e97cc;
+  border-radius: 15px;
 }
 
 .modal-body {
   padding: 2px 16px;
+  border-radius: 15px;
 }
 
 .modal-footer {
@@ -218,6 +225,7 @@ img {
   background-color: #24242e;
   color: #635f7c;
   font-size:15px;
+  border-radius: 15px;
 }
 
 .modal-button {
@@ -233,7 +241,7 @@ img {
   margin: 4px 2px;
   display: inline-block;
   color: #c6bfe9;
-
+  transition: 1s;
 }
 
 .buttons {
@@ -251,6 +259,18 @@ img {
   justify-content: center;
   align-items: center;
 }
+
+.buttons, .buttons2 {
+  transition: 1s;
+}
+
+.modal-button:hover {
+  transition: 1s;
+  border: 2px solid #ffffff;
+}
+
+
+
 
 img {
   width: 70%;
